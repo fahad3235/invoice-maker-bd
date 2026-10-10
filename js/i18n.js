@@ -1,0 +1,67 @@
+/* invoice-maker-bd — UI strings (EN / BN). User-typed content is never translated. */
+(function (root) {
+  'use strict';
+  var STR = {
+    en: {
+      appTitle: 'Invoice Maker BD', appSub: 'Freelancer & small-shop invoices, offline',
+      new: 'New', save: 'Save invoice', print: 'Print / PDF', export: 'Export',
+      import: 'Import', langToggle: 'বাংলা',
+      business: 'Your business', bizName: 'Business name', bizAddr: 'Address',
+      bizPhone: 'Phone', bizEmail: 'Email (optional)', logo: 'Logo (optional, stays in your browser)',
+      removeLogo: 'Remove logo',
+      client: 'Bill to (client)', clientName: 'Client name', clientAddr: 'Client address', clientPhone: 'Client phone (optional)',
+      meta: 'Invoice details', invNo: 'Invoice no.', issueDate: 'Issue date', dueDate: 'Due date',
+      status: 'Status', unpaid: 'Unpaid', paid: 'Paid',
+      items: 'Items', addItem: '+ Add item', desc: 'Description', qty: 'Qty', unit: 'Unit',
+      price: 'Unit price (৳)', total: 'Total', actions: '',
+      subtotal: 'Subtotal', discount: 'Discount %', vat: 'VAT %', grandTotal: 'Grand total',
+      amountWords: 'Amount in words',
+      notes: 'Notes (optional, shows on invoice)', notesPh: 'e.g. Payment due within 7 days. bKash: 01XXXXXXXXX',
+      history: 'Saved invoices', noHistory: 'No saved invoices yet. Fill the form and press "Save invoice".',
+      load: 'Open', markPaid: 'Mark paid', markUnpaid: 'Mark unpaid', del: 'Delete',
+      sample: 'Load sample', clear: 'Clear all',
+      errClientName: 'Enter the client name before printing.',
+      errQty: 'Quantity must be a positive number.',
+      errPrice: 'Unit price must be zero or more.',
+      errItemDesc: 'Item description is required.',
+      errTotalCap: 'Total exceeds ৳9,99,99,999 — split into multiple invoices.',
+      errBadFile: 'Could not read that file as invoice data.',
+      confirmClear: 'Clear the current invoice? Unsaved changes will be lost.',
+      confirmDel: 'Delete this invoice permanently?',
+      saved: 'Invoice saved.', loaded: 'Invoice loaded.', deleted: 'Invoice deleted.',
+      invPrefix: 'Invoice prefix', autoNum: 'Next number auto-increments on save.',
+      wordTaka: 'taka', printTitle: 'INVOICE'
+    },
+    bn: {
+      appTitle: 'ইনভয়েস মেকার বিডি', appSub: 'ফ্রিল্যান্সার ও ছোট দোকানের ইনভয়েস, অফলাইন',
+      new: 'নতুন', save: 'ইনভয়েস সংরক্ষণ', print: 'প্রিন্ট / PDF', export: 'এক্সপোর্ট',
+      import: 'ইমপোর্ট', langToggle: 'English',
+      business: 'আপনার ব্যবসা', bizName: 'ব্যবসার নাম', bizAddr: 'ঠিকানা',
+      bizPhone: 'ফোন', bizEmail: 'ইমেইল (ঐচ্ছিক)', logo: 'লোগো (ঐচ্ছিক, শুধু আপনার ব্রাউজারে থাকবে)',
+      removeLogo: 'লোগো সরান',
+      client: 'ক্রেতা (ক্লায়েন্ট)', clientName: 'ক্লায়েন্টের নাম', clientAddr: 'ক্লায়েন্টের ঠিকানা', clientPhone: 'ক্লায়েন্টের ফোন (ঐচ্ছিক)',
+      meta: 'ইনভয়েসের বিবরণ', invNo: 'ইনভয়েস নং', issueDate: 'ইস্যুর তারিখ', dueDate: 'পরিশোধের তারিখ',
+      status: 'অবস্থা', unpaid: 'অপরিশোধিত', paid: 'পরিশোধিত',
+      items: 'আইটেমসমূহ', addItem: '+ আইটেম যোগ করুন', desc: 'বিবরণ', qty: 'পরিমাণ', unit: 'একক',
+      price: 'একক মূল্য (৳)', total: 'মোট', actions: '',
+      subtotal: 'উপ-মোট', discount: 'ছাড় %', vat: 'ভ্যাট %', grandTotal: 'সর্বমোট',
+      amountWords: 'কথায় পরিমাণ',
+      notes: 'নোট (ঐচ্ছিক, ইনভয়েসে দেখাবে)', notesPh: 'যেমন: ৭ দিনের মধ্যে পরিশোধ করুন। বিকাশ: ০১XXXXXXXXX',
+      history: 'সংরক্ষিত ইনভয়েস', noHistory: 'এখনও কোনো ইনভয়েস সংরক্ষণ করা হয়নি। ফর্ম পূরণ করে "ইনভয়েস সংরক্ষণ" চাপুন।',
+      load: 'খুলুন', markPaid: 'পরিশোধিত করুন', markUnpaid: 'অপরিশোধিত করুন', del: 'মুছুন',
+      sample: 'নমুনা লোড', clear: 'সব মুছুন',
+      errClientName: 'প্রিন্টের আগে ক্লায়েন্টের নাম লিখুন।',
+      errQty: 'পরিমাণ ধনাত্মক সংখ্যা হতে হবে।',
+      errPrice: 'একক মূল্য শূন্য বা বেশি হতে হবে।',
+      errItemDesc: 'আইটেমের বিবরণ আবশ্যক।',
+      errTotalCap: 'মোট ৳৯,৯৯,৯৯,৯৯৯ ছাড়িয়েছে — একাধিক ইনভয়েসে ভাগ করুন।',
+      errBadFile: 'ফাইলটি ইনভয়েস ডেটা হিসেবে পড়া যায়নি।',
+      confirmClear: 'বর্তমান ইনভয়েস মুছবেন? অসংরক্ষিত পরিবর্তন হারিয়ে যাবে।',
+      confirmDel: 'এই ইনভয়েস স্থায়ীভাবে মুছে ফেলবেন?',
+      saved: 'ইনভয়েস সংরক্ষিত হয়েছে।', loaded: 'ইনভয়েস লোড হয়েছে।', deleted: 'ইনভয়েস মুছে ফেলা হয়েছে।',
+      invPrefix: 'ইনভয়েস প্রিফিক্স', autoNum: 'সংরক্ষণে নম্বর স্বয়ংক্রিয়ভাবে বাড়বে।',
+      wordTaka: 'টাকা', printTitle: 'ইনভয়েস'
+    }
+  };
+  root.InvoiceI18n = STR;
+})(typeof window !== 'undefined' ? window : globalThis);
